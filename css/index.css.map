@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../scss/scss_module/base/all_base.scss"],"names":[],"mappings":"AAGA;EACI,aAHe;EAIf;EACA","file":"index.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/scss_module/base/all_base.scss","../scss/scss_module/flex/flex_body.scss"],"names":[],"mappings":"AAGA;EACI,aAHe;EAIf;EACA;;;ACLJ;EACI;EACA;EAEA","file":"index.css"}
