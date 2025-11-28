@@ -1,0 +1,8 @@
+@use '../scss_module/flex/flex_body.scss' as fb;
+
+//body가 flex box이고 content 자체 최상위라 해당 영역에서 재선언.
+body {
+    @include fb.flex_body;
+    width: 1280px;
+    height: 720px;
+}
