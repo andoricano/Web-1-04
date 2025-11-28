@@ -5,8 +5,16 @@ nav{
     height: 120px;
     display: flex;
 
-
-    //test code
     background-color: rgb(50, 50, 50);
-    
+    border-bottom: 2px solid rgb(172, 155, 158);
+    box-sizing: border-box;
+
+    justify-content: flex-end;
+    align-items: flex-end;   
+}
+
+nav .mail{
+    margin: 0 10px 10px 0;
+    width: 30px;
+    height: 30px;
 }
