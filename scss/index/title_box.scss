@@ -1,0 +1,37 @@
+//title box는 구조가 단순하여 바로 구현.
+//비슷한 유형이 있다면 무조건 mixin을 통해 modulization 후 사용할 것.
+
+#title_box {
+    background-color: rgb(50, 50, 50);
+    width: 280px;
+    height: 720px;
+    display: flex;
+
+    border-right: 2px solid rgb(172, 155, 158);
+    box-sizing: border-box;
+    flex-wrap: wrap; //wrap을 넣어줘야 컨텐트 영역이 유지가 되어 조건을 맞출 수 있다
+
+}
+
+
+#title_box .up {
+    display: flex;
+    align-items: center;
+    color: rgb(172, 155, 158);
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30pt;
+    line-height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#title_box .down {
+    display: flex;
+    font-size: 10pt;
+    align-items: flex-end;
+    color: rgb(172, 155, 158);
+
+    line-height: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}

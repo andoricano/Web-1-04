@@ -1,7 +1,6 @@
 //body에 기본적으로 들어갈 setup
-body {
-    margin: 10px auto;
+@mixin flex_body {
+    margin-top: 10px;
     width: 100%;
-
-    background-color: rgb(50, 50, 50);
+    display: flex;
 }
