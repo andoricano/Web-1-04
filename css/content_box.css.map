@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../scss/index/content_box/content_box.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EAEA;EACA;EACA","file":"content_box.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/index/content_box/content_box.scss","../scss/index/content_box/content_article.scss"],"names":[],"mappings":"AAIA;EACI;EACA;EAEA;EACA;EACA;;ACNA;EACI;;AAEA;EACI","file":"content_box.css"}

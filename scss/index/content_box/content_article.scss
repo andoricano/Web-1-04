@@ -1,0 +1,12 @@
+@use "sass:math";
+
+
+@mixin numbering_article($count) {
+    article {
+        width: (100% / $count);
+
+        >p {
+            font-size: 30pt;
+        }
+    }
+}
