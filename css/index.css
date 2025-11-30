@@ -68,7 +68,8 @@ nav .mail {
   flex-wrap: wrap;
 }
 #content_box article {
-  width: 25%;
+  width: 170px;
+  margin: 70px 40px;
 }
 #content_box article > p {
   font-size: 30pt;
