@@ -5,8 +5,12 @@
     article {
         width: 170px;
         margin : 70px 40px;
+        
+        display: flex;
+        flex-wrap: wrap;
         >p {
             font-size: 30pt;
         }
+
     }
 }

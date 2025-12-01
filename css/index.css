@@ -70,7 +70,13 @@ nav .mail {
 #content_box article {
   width: 170px;
   margin: 70px 40px;
+  display: flex;
+  flex-wrap: wrap;
 }
 #content_box article > p {
   font-size: 30pt;
+}
+#content_box img {
+  width: 100%;
+  object-fit: contain;
 }/*# sourceMappingURL=index.css.map */
