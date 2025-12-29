@@ -4,12 +4,23 @@
 @mixin numbering_article {
     article {
         width: 170px;
-        margin : 70px 40px;
-        
+        margin: 70px 40px;
+
         display: flex;
         flex-wrap: wrap;
-        >p {
+
+        opacity: 0.4;
+        color: lightgray;
+
+        >p:first-of-type {
+            //첫번째 p만 적용
+            width: 100%;
+            text-align: left;
             font-size: 30pt;
+            font-weight: 900;
+
+            border-bottom: 2px solid lightgray;
+            margin-bottom: 70px; 
         }
 
     }

@@ -72,9 +72,16 @@ nav .mail {
   margin: 70px 40px;
   display: flex;
   flex-wrap: wrap;
+  opacity: 0.4;
+  color: lightgray;
 }
-#content_box article > p {
+#content_box article > p:first-of-type {
+  width: 100%;
+  text-align: left;
   font-size: 30pt;
+  font-weight: 900;
+  border-bottom: 2px solid lightgray;
+  margin-bottom: 70px;
 }
 #content_box img {
   width: 100%;

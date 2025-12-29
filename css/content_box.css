@@ -10,6 +10,7 @@
   margin: 70px 40px;
   display: flex;
   flex-wrap: wrap;
+  opacity: 0.4;
 }
 #content_box article > p {
   font-size: 30pt;
