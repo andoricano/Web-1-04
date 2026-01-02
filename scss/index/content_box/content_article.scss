@@ -34,34 +34,6 @@
             }
         }
 
-        > p:first-of-type {
-            width: 100%;
-            text-align: left;
-            font-size: 30pt;
-            font-weight: 900;
-            border-bottom: 2px solid lightgray;
-            margin-bottom: 70px;
-            transition: border-color 0.5s ease;
-        }
-
-        &:hover {
-            opacity: 1;
-
-            &::before {
-                left: 0;
-                transition: left 0.5s ease;
-            }
-
-            &, p, div, span {
-                color: white !important;
-                transition: color 0.5s ease;
-            }
-
-            > p:first-of-type {
-                border-bottom-color: white;
-            }
-        }
-
         p, div, span {
             transition: none;
         }
