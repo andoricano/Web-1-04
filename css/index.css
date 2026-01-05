@@ -94,29 +94,6 @@ nav .mail {
   background-size: cover;
   background-position: center;
 }
-#content_box article > p:first-of-type {
-  width: 100%;
-  text-align: left;
-  font-size: 30pt;
-  font-weight: 900;
-  border-bottom: 2px solid lightgray;
-  margin-bottom: 70px;
-  transition: border-color 0.5s ease;
-}
-#content_box article:hover {
-  opacity: 1;
-}
-#content_box article:hover::before {
-  left: 0;
-  transition: left 0.5s ease;
-}
-#content_box article:hover, #content_box article:hover p, #content_box article:hover div, #content_box article:hover span {
-  color: white !important;
-  transition: color 0.5s ease;
-}
-#content_box article:hover > p:first-of-type {
-  border-bottom-color: white;
-}
 #content_box article p, #content_box article div, #content_box article span {
   transition: none;
 }

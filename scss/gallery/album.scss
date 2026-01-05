@@ -1,0 +1,10 @@
+.album {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1000px;         
+  margin: 0 auto;        
+  padding: 50px 0;
+  justify-content: center; 
+  gap: 30px;            
+  background: #f0f0f0;
+}
