@@ -1,0 +1,14 @@
+.img-box {
+  flex: 0 0 164px;       
+  width: 164px; 
+  height: 148px;
+  overflow: hidden;
+  transform: skewX(-15deg);
+  border: 4px solid #fff;
+}
+
+.img-box img {
+  object-fit: cover;
+
+  transform: skewX(15deg) scale(1.2);
+}

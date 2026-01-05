@@ -1,14 +1,3 @@
-.album {
-  display: flex;
-  flex-wrap: wrap;
-  width: 1000px;
-  margin: 0 auto;
-  padding: 50px 0;
-  justify-content: center;
-  gap: 30px;
-  background: #f0f0f0;
-}
-
 .img-box {
   flex: 0 0 164px;
   width: 164px;
@@ -21,4 +10,4 @@
 .img-box img {
   object-fit: cover;
   transform: skewX(15deg) scale(1.2);
-}/*# sourceMappingURL=gallery.css.map */
+}/*# sourceMappingURL=img_box.css.map */
