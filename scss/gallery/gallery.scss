@@ -1,4 +1,9 @@
 @use './album.scss';
 @use './img_box.scss';
 
+body {
+    background-image: url('../../rsc/bg.png');
+    background-repeat: no-repeat;
+}
+
 @debug SCSS compiler

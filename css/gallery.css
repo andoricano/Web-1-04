@@ -24,4 +24,9 @@
 .img-box img {
   transform: skewX(15deg);
   object-fit: cover;
+}
+
+body {
+  background-image: url("../../rsc/bg.png");
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=gallery.css.map */
