@@ -1,14 +1,17 @@
 .img-box {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex: 0 0 140px;
+  width: 140px;
+  height: 140px;
   overflow: hidden;
   transform: skewX(-15deg);
   border: 6px solid #fff;
   border-radius: 20px;
   background-color: #605c5c;
 }
-
 .img-box img {
   transform: skewX(15deg);
+  object-fit: cover;
 }/*# sourceMappingURL=img_box.css.map */

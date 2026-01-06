@@ -1,5 +1,5 @@
-@use '../scss_module/frame/skew-div.scss';
+@use '../scss_module/frame/skew-div.scss' as *;
 
 .img-box {
-    @include skew-div($width: 160px);
+    @include skew-div();
 }
