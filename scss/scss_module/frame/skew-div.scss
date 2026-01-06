@@ -1,0 +1,25 @@
+@mixin skew-div($width: 140px,
+    $height: 140px,
+    $skew-angle: -15deg,
+    $border-size: 6px,
+    $border-radius: 20px) {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex: 0 0 $width;
+    width: $width;
+    height: $height;
+    overflow: hidden;
+
+    transform: skewX($skew-angle);
+    border: $border-size solid #fff;
+    border-radius: $border-radius;
+    background-color: #605c5c;
+
+    img {
+        transform: skewX($skew-angle * -1);
+        object-fit: cover;
+    }
+}

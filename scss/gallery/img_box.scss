@@ -1,15 +1,5 @@
-.img-box {
-    display: flex;
-    justify-content: center; 
-    
-    flex: 0 0 140px;
-    overflow: hidden;
-    transform: skewX(-15deg);
-    border: 6px solid #fff;
-    border-radius: 20px;
-    background-color: #605c5c;
-}
+@use '../scss_module/frame/skew-div.scss';
 
-.img-box img {
-    transform: skewX(15deg);
+.img-box {
+    @include skew-div($width: 160px);
 }
