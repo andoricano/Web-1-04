@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../scss/gallery/img_box.scss","../scss/scss_module/frame/skew-div.scss"],"names":[],"mappings":"AAEA;ECII;EACA;EACA;EAEA;EACA,OAXoB;EAYpB,QAXS;EAYT;EAEA;EACA;EACA,eAbgB;EAchB;;AAEA;EACI;EACA","file":"img_box.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/gallery/img_box.scss","../scss/scss_module/frame/skew-div.scss"],"names":[],"mappings":"AAEA;ECII;EACA;EACA;EAEA;EACA,OAXoB;EAYpB,QAXS;EAYT;EAEA;EACA;EACA,eAbgB;EAchB;EDbA;EACA;EAEA;;ACYA;EACI;EACA;;ADZJ;EACI;EACA;EACA","file":"img_box.css"}

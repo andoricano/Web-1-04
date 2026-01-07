@@ -2,4 +2,15 @@
 
 .img-box {
     @include skew-div();
+
+    transform: skewX(-15deg) scale(1);
+    background-color: #605c5c;
+
+    transition: transform 0.3s ease-out, background-color 0.3s ease-out;
+
+    &:hover {
+        z-index: 1;
+        background-color: #7f7211;
+        transform: skewX(-15deg) scale(1.4);
+    }
 }

@@ -20,10 +20,21 @@
   border: 6px solid #fff;
   border-radius: 20px;
   background-color: #605c5c;
+  transform: skewX(-15deg) scale(1);
+  background-color: #605c5c;
+  transition: transform 0.3s ease-out, background-color 0.3s ease-out;
 }
 .img-box img {
   transform: skewX(15deg);
   object-fit: cover;
+}
+.img-box img {
+  transition: transform 0.3s ease-out;
+}
+.img-box:hover {
+  z-index: 1;
+  background-color: #7f7211;
+  transform: skewX(-15deg) scale(1.4);
 }
 
 body {
