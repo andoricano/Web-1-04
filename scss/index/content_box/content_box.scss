@@ -1,4 +1,5 @@
 @use './nunbering_box.scss' as *;
+@use '../../scss_module/transition/hover/background_hover.scss' as *;
 
 #content_box {
     display: flex;
@@ -14,13 +15,7 @@
     }
 
     .numbering_box {
-        @include numbering_box('../res/back.png');
-
-        img {
-            width: 100%;
-            object-fit: contain;
-        }
-
+        @include numbering_box('../../rsc/back.png');
     }
 
 }

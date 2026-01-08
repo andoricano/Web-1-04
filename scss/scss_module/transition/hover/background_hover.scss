@@ -1,58 +1,51 @@
+//gpt 추천이지만.. 이 방법은 일단 보류.
 @mixin background_transition(
-    $bg_path: white 
+    $bg_path: null
 ) {
     position: relative;
     overflow: hidden;  
+    background-color: rgb(50, 50, 50);
     
-    @if $bg_path == white {
-        background-color: white;
-    } @else {
-        background: url($bg_path) no-repeat center / cover;
-    }
-
-    transition: opacity 0.5s ease, color 0.5s ease;
-
-    > p:first-of-type {
-        width: 100%;
-        text-align: left;
-        font-size: 30pt;
-        font-weight: 900;
-        border-bottom: 2px solid lightgray;
-        margin-bottom: 70px;
-        transition: border-color 0.5s ease;
-    }
+    color: lightgray;
+    transition: color 0.4s ease;
 
     &::before {
         content: "";
         position: absolute;
         top: 0;
-        left: -100%; 
+        left: -100%;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        z-index: -1; 
-        transition: left 0.5s ease;
+        
+        @if $bg_path != null {
+            background: url($bg_path) no-repeat center / cover;
+        } @else {
+            background-color:  rgb(50, 50, 50);
+        }
+        
+        z-index: 0; 
+        transition: left 0.6s ease-in-out;
     }
 
-    p, div, span {
+    p, div, span, article {
         position: relative;
-        z-index: 1;
-        transition: color 0.5s ease;
+        z-index: 1; 
+        transition: color 0.4s ease, border-color 0.4s ease;
     }
 
     &:hover {
-        opacity: 1;
+        color: white;
 
         &::before {
-            left: 0;
-        }
-
-        &, p, div, span {
-            color: white;
+            left: 0; 
         }
 
         > p:first-of-type {
             border-bottom-color: white;
+        }
+        
+        p, div, span {
+            color: white;
         }
     }
 }
