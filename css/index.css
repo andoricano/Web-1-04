@@ -67,13 +67,12 @@ nav .mail {
   flex-wrap: wrap;
   background-color: rgb(50, 50, 50);
 }
-#content_box article {
+#content_box .numbering_box {
   width: 250px;
   padding: 70px 40px;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  opacity: 0.4;
   color: lightgray;
   position: relative;
   overflow: hidden;
@@ -81,7 +80,14 @@ nav .mail {
   z-index: 1;
   transition: opacity 0.5s ease;
 }
-#content_box article::before {
+#content_box .numbering_box > .number {
+  margin-left: 0;
+  font-size: 30pt;
+  font-weight: 900;
+  border-bottom: 2px solid lightgray;
+  margin-bottom: 20px;
+}
+#content_box .numbering_box::before {
   content: "";
   position: absolute;
   top: 0;
@@ -94,10 +100,12 @@ nav .mail {
   background-size: cover;
   background-position: center;
 }
-#content_box article p, #content_box article div, #content_box article span {
+#content_box .numbering_box p,
+#content_box .numbering_box div,
+#content_box .numbering_box span {
   transition: none;
 }
-#content_box article img {
+#content_box .numbering_box img {
   width: 100%;
   object-fit: contain;
 }/*# sourceMappingURL=index.css.map */

@@ -1,4 +1,4 @@
-@use './content_article.scss' as at;
+@use './nunbering_box.scss' as *;
 
 #content_box {
     display: flex;
@@ -7,13 +7,13 @@
     flex-wrap: wrap;
     background-color: rgb(50, 50, 50);
 
-    @include at.numbering_article( '../res/back.png');
-
-    article {
+    .numbering_box {
+        @include numbering_box('../res/back.png');
 
         img {
             width: 100%;
             object-fit: contain;
         }
+
     }
 }
