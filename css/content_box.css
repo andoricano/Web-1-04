@@ -5,23 +5,43 @@
   flex-wrap: wrap;
   background-color: rgb(50, 50, 50);
 }
+#content_box > a {
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+}
 #content_box .numbering_box {
   width: 250px;
+  height: 600px;
   padding: 70px 40px;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   color: lightgray;
-  position: relative;
-  overflow: hidden;
   cursor: pointer;
   z-index: 1;
   transition: opacity 0.5s ease;
 }
 #content_box .numbering_box > .number {
-  font-size: 40pt;
-  font-weight: bold;
-  color: #240303;
+  margin-left: 0;
+  font-size: 30pt;
+  font-weight: 900;
+  border-bottom: 2px solid lightgray;
+  margin-bottom: 20px;
+}
+#content_box .numbering_box > .content_text > p:first-of-type {
+  margin: "140px auto";
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 1000;
+}
+#content_box .numbering_box > .content_text > p:not(:first-of-type) {
+  margin: 40;
+  background-color: transparent;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
 }
 #content_box .numbering_box::before {
   content: "";

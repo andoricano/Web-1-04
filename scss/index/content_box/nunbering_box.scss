@@ -1,52 +1,70 @@
+@use '../../scss_module/text/title_content.scss' as *;
+
 @mixin numbering_box($hover-img: null) {
     width: 250px;
+    height: 600px;
     padding: 70px 40px;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
+    color: lightgray;
 
 
     &>.number {
-        margin-left: 0;//상위 margin-auto 상쇄
+        margin-left: 0; //상위 margin-auto 상쇄
         font-size: 30pt;
         font-weight: 900;
         border-bottom: 2px solid lightgray;
         margin-bottom: 20px;
     }
 
+    &>.content_text {
+        height: 250px;
+        @include title_content($title-bgc: transparent,
+            $title-text-color: #fff,
+            $title-size: 20px,
+            $title-margin: 20px auto,
+            $title-weight: 1000,
+            $content-bgc: transparent,
+            $content-text-color: #fff,
+            $content-size: 15px,
+            $content-margin: 40,
+            $content-weight: 400);
+
+    }
+
     // 기본 상태
     // opacity: 0.4;
-    color: lightgray;
-    position: relative; // 가상 요소 기준점
-    overflow: hidden; // 배경 나가는 것 방지
-    cursor: pointer;
-    z-index: 1;
-    transition: opacity 0.5s ease;
+    // position: relative; // 가상 요소 기준점
+    // overflow: hidden; // 배경 나가는 것 방지
+    // cursor: pointer;
+    // z-index: 1;
+    // transition: opacity 0.5s ease;
 
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        transition: none;
+    // &::before {
+    //     content: "";
+    //     position: absolute;
+    //     top: 0;
+    //     left: -100%;
+    //     width: 100%;
+    //     height: 100%;
+    //     z-index: -1;
+    //     transition: none;
 
-        @if $hover-img !=null {
-            background-image: url($hover-img);
-            background-size: cover;
-            background-position: center;
-        }
+    //     @if $hover-img !=null {
+    //         background-image: url($hover-img);
+    //         background-size: cover;
+    //         background-position: center;
+    //     }
 
-        @else {
-            background-color: white;
-        }
-    }
+    //     @else {
+    //         background-color: white;
+    //     }
+    // }
 
-    p,
-    div,
-    span {
-        transition: none;
-    }
+    // p,
+    // div,
+    // span {
+    //     transition: none;
+    // }
 }

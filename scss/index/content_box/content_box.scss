@@ -7,6 +7,12 @@
     flex-wrap: wrap;
     background-color: rgb(50, 50, 50);
 
+    >a {
+        display: flex;
+        flex-wrap: wrap;
+        width: 250px;
+    }
+
     .numbering_box {
         @include numbering_box('../res/back.png');
 
@@ -16,4 +22,5 @@
         }
 
     }
+
 }
