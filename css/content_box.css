@@ -19,7 +19,7 @@
   flex-wrap: wrap;
   color: lightgray;
   opacity: 0.4;
-  background-image: url("/rsc/back.png");
+  background-image: url("../rsc/back.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: -250px center;

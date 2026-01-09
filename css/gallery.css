@@ -35,6 +35,6 @@
 }
 
 body {
-  background-image: url("/rsc/bg.png");
+  background-image: url("../rsc/bg.png");
   background-repeat: no-repeat;
 }/*# sourceMappingURL=gallery.css.map */
