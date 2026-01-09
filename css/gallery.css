@@ -37,4 +37,5 @@
 body {
   background-image: url("../rsc/bg.png");
   background-repeat: no-repeat;
+  background-size: cover;
 }/*# sourceMappingURL=gallery.css.map */
