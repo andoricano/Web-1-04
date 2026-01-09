@@ -28,9 +28,6 @@
   transform: skewX(15deg);
   object-fit: cover;
 }
-.img-box img {
-  transition: transform 0.3s ease-out;
-}
 .img-box:hover {
   z-index: 1;
   background-color: #7f7211;
@@ -38,6 +35,6 @@
 }
 
 body {
-  background-image: url("../../rsc/bg.png");
+  background-image: url("/rsc/bg.png");
   background-repeat: no-repeat;
 }/*# sourceMappingURL=gallery.css.map */
