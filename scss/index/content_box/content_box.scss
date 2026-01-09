@@ -15,7 +15,7 @@
     }
 
     .numbering_box {
-        @include numbering_box('../../rsc/back.png');
+        @include numbering_box('/rsc/back.png');
     }
 
 }
